@@ -6,7 +6,6 @@ async function getTickets() {
       revalidate: 0, // use 0 to opt out of caching
     },
   });
-  await new Promise((resolve) => setTimeout(resolve, 3000));
   return response.json();
 }
 

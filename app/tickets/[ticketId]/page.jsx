@@ -16,7 +16,7 @@ async function getTicket(id) {
       revalidate: 60, // use 0 to opt out of caching
     },
   });
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+
 
   if (!response.ok) {
     notFound();
